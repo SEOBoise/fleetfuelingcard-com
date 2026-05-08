@@ -18,5 +18,3 @@
 /wp-admin/* / 301
 /wp-login.php / 301
 
-# Old WP /?p=N permalinks (catch-all to homepage)
-/?p=:id / 301
