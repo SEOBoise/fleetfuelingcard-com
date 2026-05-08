@@ -1,0 +1,31 @@
+# build output
+dist/
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production
+.env.local
+
+# astro
+.astro/
+
+# legacy source assets (kept locally for reference; do not deploy)
+legacy-assets/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*

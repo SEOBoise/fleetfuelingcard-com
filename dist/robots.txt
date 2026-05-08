@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fleetfuelingcard.com/sitemap-index.xml

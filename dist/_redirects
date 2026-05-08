@@ -1,0 +1,22 @@
+# Cloudflare Pages redirect rules
+# Format: <from> <to> <status>
+
+# Sitemap aliases
+/sitemap.xml /sitemap-index.xml 301
+/sitemap_index.xml /sitemap-index.xml 301
+
+# Legacy WordPress image URLs → WebP equivalents.
+# Anyone with a bookmarked /wp-content/uploads/YYYY/MM/foo.png URL gets the
+# matching /images/foo.webp instead.
+/wp-content/uploads/:year/:month/:slug.png /images/:slug.webp 301
+/wp-content/uploads/:year/:month/:slug.jpg /images/:slug.webp 301
+/wp-content/uploads/:year/:month/:slug.jpeg /images/:slug.webp 301
+
+# WordPress feed paths — preserve referrers but no longer real endpoints.
+/feed/ / 301
+/feed /  301
+/wp-admin/* / 301
+/wp-login.php / 301
+
+# Old WP /?p=N permalinks (catch-all to homepage)
+/?p=:id / 301
